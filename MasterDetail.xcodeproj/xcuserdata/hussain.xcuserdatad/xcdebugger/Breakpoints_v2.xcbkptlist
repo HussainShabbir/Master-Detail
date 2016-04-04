@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Custom TableView/MasterDetailCustomTableView.swift"
+            timestampString = "478389817.39168"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "validateProposedFirstResponder(_:forEvent:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Custom Sheet/MasterDetailCustomSheetWindowController.swift"
+            timestampString = "478425121.207543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "controlTextDidChange(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MasterDetail/MasterDetailTableView/MasterDetailTableViewController.swift"
+            timestampString = "478426469.685716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "updateTableList(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MasterDetail/MainWindow/MasterDetailMainWindowController.swift"
+            timestampString = "478429409.938396"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "tableViewRowDidChanged(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDetail.MasterDetailMainWindowController.tableViewRowDidChanged (MasterDetail.MasterDetailMainWindowController)(Swift.AnyObject) -&gt; ()"
+                  moduleName = "MasterDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hussain/Documents/workSpace/Swift/MasterDetail/MasterDetail/MainWindow/MasterDetailMainWindowController.swift"
+                  timestampString = "478426987.607928"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for MasterDetail.tableViewRowChange.tableViewRowDidChanged &lt;A where A: MasterDetail.tableViewRowChange&gt; (A)(Swift.AnyObject) -&gt; () in conformance MasterDetail.MasterDetailMainWindowController : MasterDetail.tableViewRowChange in MasterDetail"
+                  moduleName = "MasterDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hussain/Documents/workSpace/Swift/MasterDetail/MasterDetail/MainWindow/MasterDetailMainWindowController.swift"
+                  timestampString = "478426987.608064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MasterDetail/MainWindow/MasterDetailMainWindowController.swift"
+            timestampString = "478426767.105206"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "outlineViewRowDidChanged(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDetail.MasterDetailMainWindowController.outlineViewRowDidChanged (MasterDetail.MasterDetailMainWindowController)(Swift.AnyObject) -&gt; ()"
+                  moduleName = "MasterDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hussain/Documents/workSpace/Swift/MasterDetail/MasterDetail/MainWindow/MasterDetailMainWindowController.swift"
+                  timestampString = "478426987.608773"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for MasterDetail.outlineViewRowChange.outlineViewRowDidChanged &lt;A where A: MasterDetail.outlineViewRowChange&gt; (A)(Swift.AnyObject) -&gt; () in conformance MasterDetail.MasterDetailMainWindowController : MasterDetail.outlineViewRowChange in MasterDetail"
+                  moduleName = "MasterDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hussain/Documents/workSpace/Swift/MasterDetail/MasterDetail/MainWindow/MasterDetailMainWindowController.swift"
+                  timestampString = "478426987.608898"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

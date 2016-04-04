@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15A282b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MDMainWindowController" customModule="MasterDetail" customModuleProvider="target">
+            <connections>
+                <outlet property="detailPlaceHolderView" destination="h0O-La-J8y" id="4RN-5u-UCK"/>
+                <outlet property="masterDetailPlaceHolderSplitView" destination="YJF-Uf-faV" id="dhA-B0-qra"/>
+                <outlet property="masterPlaceHolderView" destination="6Yf-1i-IZq" id="PhN-Je-Qkf"/>
+                <outlet property="sourceListPlaceHolderView" destination="4MG-Tr-2NP" id="eO7-MJ-HJh"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="619" height="474"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="619" height="474"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="619" height="474"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="4MG-Tr-2NP">
+                        <rect key="frame" x="0.0" y="27" width="219" height="448"/>
+                    </customView>
+                    <splitView dividerStyle="paneSplitter" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-Uf-faV">
+                        <rect key="frame" x="218" y="0.0" width="400" height="470"/>
+                        <subviews>
+                            <customView id="6Yf-1i-IZq">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="224.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224.5" id="s7O-W1-r1d"/>
+                                </constraints>
+                            </customView>
+                            <customView fixedFrame="YES" id="h0O-La-J8y">
+                                <rect key="frame" x="0.0" y="234.5" width="400" height="235.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                    </splitView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="15O-R7-hNT">
+                        <rect key="frame" x="0.0" y="-1" width="219" height="29"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-QB-SFq">
+                                <rect key="frame" x="0.0" y="-1" width="40" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="64a-cp-VLS"/>
+                                    <constraint firstAttribute="width" constant="40" id="6Sp-W5-ImB"/>
+                                </constraints>
+                                <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" allowsMixedState="YES" imageScaling="proportionallyDown" inset="2" id="rGC-xo-tbg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="addPerson:" target="-2" id="FNB-Fb-ldt"/>
+                                    <binding destination="-2" name="enabled" keyPath="isAddButtonEnable" id="4rt-s6-E72"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="06H-RT-DNX">
+                                <rect key="frame" x="40" y="-1" width="55" height="31"/>
+                                <buttonCell key="cell" type="smallSquare" title="Remove" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" allowsMixedState="YES" imageScaling="proportionallyDown" inset="2" id="KVZ-dT-uZB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="removePerson:" target="-2" id="IrN-WP-OmQ"/>
+                                    <binding destination="-2" name="enabled" keyPath="isremoveButtonEnable" id="hws-JA-Qzd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Hex-QB-SFq" firstAttribute="baseline" secondItem="06H-RT-DNX" secondAttribute="baseline" id="3Op-Wj-RCU"/>
+                            <constraint firstItem="Hex-QB-SFq" firstAttribute="top" secondItem="15O-R7-hNT" secondAttribute="top" id="JGg-rx-i6A"/>
+                            <constraint firstAttribute="bottom" secondItem="Hex-QB-SFq" secondAttribute="bottom" id="Vz0-Y7-u8h"/>
+                            <constraint firstItem="Hex-QB-SFq" firstAttribute="leading" secondItem="15O-R7-hNT" secondAttribute="leading" id="XVC-8o-r3w"/>
+                            <constraint firstItem="Hex-QB-SFq" firstAttribute="firstBaseline" secondItem="06H-RT-DNX" secondAttribute="firstBaseline" id="imA-yP-sa3"/>
+                            <constraint firstItem="06H-RT-DNX" firstAttribute="leading" secondItem="15O-R7-hNT" secondAttribute="leading" constant="40" id="xRb-zj-3tW"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YJF-Uf-faV" secondAttribute="trailing" constant="1" id="4Pp-IW-37V"/>
+                    <constraint firstItem="YJF-Uf-faV" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="4" id="7Qk-5M-CS5"/>
+                    <constraint firstItem="15O-R7-hNT" firstAttribute="trailing" secondItem="4MG-Tr-2NP" secondAttribute="trailing" id="JGg-tc-Btc"/>
+                    <constraint firstItem="15O-R7-hNT" firstAttribute="leading" secondItem="4MG-Tr-2NP" secondAttribute="leading" id="WmT-CK-hRT"/>
+                    <constraint firstAttribute="bottom" secondItem="YJF-Uf-faV" secondAttribute="bottom" id="X2Y-I9-eDv"/>
+                    <constraint firstItem="YJF-Uf-faV" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="218" id="brg-JT-c2K"/>
+                    <constraint firstItem="15O-R7-hNT" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="egV-Ke-tsA"/>
+                    <constraint firstAttribute="bottom" secondItem="4MG-Tr-2NP" secondAttribute="bottom" constant="27" id="hT6-Ga-snG"/>
+                    <constraint firstItem="YJF-Uf-faV" firstAttribute="leading" secondItem="4MG-Tr-2NP" secondAttribute="trailing" constant="-1" id="ihv-6b-u1o"/>
+                    <constraint firstAttribute="bottom" secondItem="15O-R7-hNT" secondAttribute="bottom" constant="-1" id="s9K-Vx-am0"/>
+                    <constraint firstItem="4MG-Tr-2NP" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="-1" id="uZN-lz-mVi"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="309.5" y="393"/>
+        </window>
+    </objects>
+</document>
