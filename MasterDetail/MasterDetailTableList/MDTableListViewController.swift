@@ -13,10 +13,12 @@ protocol MDTableViewRowChange{
 }
 
 class MDTableListViewController: NSViewController {
+    
     var tableList = [MDEmployeeModel]()
     @IBOutlet weak var arrayController : NSArrayController!
     var delegate : MDTableViewRowChange?
     @IBOutlet weak var tableView : NSTableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
@@ -33,9 +35,11 @@ class MDTableListViewController: NSViewController {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
     override init?(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
+    
     convenience init()
     {
         self.init(nibName: nil, bundle: nil)!
