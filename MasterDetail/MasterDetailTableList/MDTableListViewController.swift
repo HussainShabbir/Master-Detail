@@ -46,11 +46,11 @@ class MDTableListViewController: NSViewController {
     }
     
     func tableViewSelectionDidChange(notification: NSNotification) {
-        let rowIndex = notification.object?.selectedRow
+        let rowIndex  = notification.object?.selectedRow
         if (rowIndex != -1 && self.arrayController.arrangedObjects.count > rowIndex)
         {
-            let rowObject = self.arrayController.arrangedObjects[rowIndex!]
-            self.delegate?.tableViewRowDidChanged(rowObject!)
+            let rowObject : AnyObject = self.arrayController.arrangedObjects[rowIndex!]
+            self.delegate?.tableViewRowDidChanged(rowObject)
         }
     }
 }
